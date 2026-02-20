@@ -6,10 +6,6 @@
 </head>
 <body>
 
-{% for product in products %}
-{{product.id}} {{product.name}}
-{% endfor %}
-
 {% if request.user.is_authenticated %}
 {% include "menu.html" %}
 {% else %}
