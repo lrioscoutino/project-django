@@ -27,4 +27,8 @@ urlpatterns = [
     path('', LoginView.as_view(
         template_name='base.html'
     ), name='login'),
+    path('logout/',
+         LogoutView.as_view(),
+         name='logout'
+         ),
 ]
